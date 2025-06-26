@@ -4,7 +4,7 @@ using namespace std;
 struct Student{
     string name;
     int roll;
-}
+};
 
 int main(){
 
@@ -18,8 +18,13 @@ int main(){
     // on creating a variable in Heap memory, it retuns the address of created variable
 
     // two ways of accessing name and roll of created variable in Heap memory
-    cout<< p2->name; // Way 1, using arrow operator
-    cout<< (*p2).name; // Way 2, using dot operator
+    p2->name = "Shyam"; // Way 1, using arrow operator
+    (*p2).roll = 102; // Way 2, using dot operator
+
+    cout<< (*p1).name <<endl;
+    cout<< p1->roll <<endl;
+    cout<< (*p2).name <<endl;
+    cout<< p2->roll <<endl;
      
 
 }
