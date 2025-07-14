@@ -1,6 +1,8 @@
 #include <iostream>
 using namespace std;
 
+// Array can only be called by address
+
 void arrayAsParam(int array1[], int *array2) // array can be passed using both [] and *
 {
     cout<<"Array 1-> ";
